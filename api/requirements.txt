@@ -1,0 +1,5 @@
+flask
+gunicorn
+requests
+random-user-agent
+flask-cors
