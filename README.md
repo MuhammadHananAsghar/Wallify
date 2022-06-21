@@ -19,6 +19,10 @@ Wallpaper app using React as a Front-end and Python as a Backend.
 
 Users enter query in the main page then this query goes to the python api on the server where live scraping perform and scrap wallpapers data from the host website and return as a json to the our Front-End and then displays in the responsive Gallery. And one of the advanced features is that it will loads data dynamically from the server api.
 
+### Website
+```
+https://gentle-bienenstitch-db8be6.netlify.app
+```
 
 ### PC
 ![](/pc.png)
