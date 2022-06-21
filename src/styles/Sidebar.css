@@ -1,0 +1,92 @@
+.sidebar{
+    height: 100vh;
+    width: 260px; 
+    overflow: hidden;
+    background-color: hsl(252, 30%, 100%);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.6rem 1rem;
+}
+.sidebar .body{
+    max-height: calc(100% - 65px);
+    overflow-y: auto;
+}
+.link{
+    color: #000;
+    text-decoration: none;
+}
+.sidebar .logo{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.sidebar .logo h2{
+    font-size: 29px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.main,
+.categories{
+    padding: 1rem 0.6rem;
+}
+.main{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.main p,
+.categories p{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+    padding-bottom: 1.2rem;
+}
+.main ul,
+.categories ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.8);
+}
+.main ul li{
+    margin-bottom: 0.9rem;
+    cursor: pointer;
+}
+.main ul li span,
+.categories ul li span{
+    padding-left: 10px;
+    font-weight: 600;
+    font-size: 15px;
+}
+.categories ul li{
+    padding: 0.7rem 0rem;
+    cursor: pointer;
+    transition: 0.2s all ease-out;
+}
+.categories ul li:hover{
+    padding: 0.6rem 0.4rem;
+    border-left: 3px solid #AD081B;
+    color: rgba(0, 0, 0, 0.8);
+}
+.main ul li:hover{
+    color: rgba(0, 0, 0, 0.8);
+}
+@media screen and (max-width: 600px){
+    .sidebar{
+        width: 280px;
+    }
+    .sidebar{
+        display: none;
+    }
+    .sidebar .logo h2{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-height: 800px){
+    .sidebar{
+        padding: 0.6rem 0.6rem 2rem 0.6rem;
+    }
+    .sidebar .body{
+        max-height: calc(100% - 120px);
+    }
+}

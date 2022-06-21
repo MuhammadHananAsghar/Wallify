@@ -1,0 +1,117 @@
+.mainSection {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: calc(100vh - 70px);
+  padding: 2rem 1rem 0rem 0rem;
+  background-color: hsl(252, 30%, 100%);
+  margin-bottom: 10rem;
+}
+.mainSection .query {
+  margin-left: 15px;
+}
+.mainSection .query h2 {
+  color: #000;
+  font-weight: bold;
+}
+.gallerySection {
+  margin-top: 2rem;
+}
+.gallery {
+  padding-bottom: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 130px);
+  grid-template-rows: repeat(auto-fit, 230px);
+  grid-gap: 15px;
+  justify-content: center;
+}
+.mainSection::-webkit-scrollbar {
+  width: 15px;
+}
+
+.mainSection::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.mainSection::-webkit-scrollbar-thumb {
+  background: #ad081b;
+  border-radius: 10px;
+}
+
+.mainSection::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.mainSection .searchContainer {
+  margin: 2rem 0rem 0rem 0rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+}
+.mainSection .searchInput {
+  width: 100%;
+  padding: 0px 10px;
+  height: 50px;
+  outline: none;
+  border: none;
+}
+.mainSection .searchIcon {
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
+}
+.mainSection .searchIcon:hover {
+  background-color: #ad081b;
+  color: hsl(252, 30%, 100%);
+}
+
+.spinner {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.load {
+  background-color: #e60023;
+  color: hsl(252, 30%, 100%);
+  width: 100px;
+  padding: 10px 0px;
+  font-weight: 600;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none;
+}
+.load:hover {
+  background-color: #ad081b;
+}
+.load .button {
+  text-align: center;
+  width: 100px;
+}
+
+.attribute {
+  margin-top: 1rem;
+  font-size: 15px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-height: 800px) {
+  .load {
+    margin-bottom: 4rem;
+  }
+}

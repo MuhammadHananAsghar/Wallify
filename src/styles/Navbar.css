@@ -1,0 +1,18 @@
+.navbar{
+    height: 70px;
+    width: 100%;
+    padding: 0rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(252, 30%, 100%);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.icon{
+    font-size: 25px;
+    cursor: pointer;
+}
+.userImage{
+    border-radius: 50%;
+    cursor: pointer;
+}
